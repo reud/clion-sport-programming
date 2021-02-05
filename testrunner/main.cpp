@@ -1,79 +1,82 @@
-#include "/Users/riad/ClionProjects/jhelper-example-project/tasks/Task.cpp"
+#include "../tasks/AVeryVeryPrimitiveGame.cpp"
 
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <cctype>
-#include <ctime>
+#include <bits/stdc++.h>
+using namespace std;
 
 namespace jhelper {
 
-struct Test {
-	std::string input;
-	std::string output;
-	bool active;
-	bool has_output;
-};
+    struct Test {
+        string input;
+        string output;
+        bool active;
+        bool has_output;
+    };
 
-bool check(std::string expected, std::string actual) {
-	while(!expected.empty() && isspace(*--expected.end()))
-		expected.erase(--expected.end());
-	while(!actual.empty() && isspace(*--actual.end()))
-		actual.erase(--actual.end());
-	return expected == actual;
-}
+    bool check(string expected, string actual) {
+        while(!expected.empty() && isspace(*--expected.end()))
+            expected.erase(--expected.end());
+        while(!actual.empty() && isspace(*--actual.end()))
+            actual.erase(--actual.end());
+        return expected == actual;
+    }
 
 } // namespace jhelper
 
-int main() {
-	std::vector<jhelper::Test> tests = {
-		{"1", "43", true, true},{"0", "42", true, true},
-	};
-	bool allOK = true;
-	int testID = 0;
-	std::cout << std::fixed;
-	double maxTime = 0.0;
-	for(const jhelper::Test& test: tests ) {
-		std::cout << "Test #" << ++testID << std::endl;
-		std::cout << "Input: \n" << test.input << std::endl;
-		if (test.has_output) {
-			std::cout << "Expected output: \n" << test.output << std::endl;
-		}
-		else {
-			std::cout << "Expected output: \n" << "N/A" << std::endl;
-		}
-		if (test.active) {
-			std::stringstream in(test.input);
-			std::ostringstream out;
-			std::clock_t start = std::clock();
-			Task solver;
-			solver.solve(in, out);
-			std::clock_t finish = std::clock();
-			double currentTime = double(finish - start) / CLOCKS_PER_SEC;
-			maxTime = std::max(currentTime, maxTime);
-			std::cout << "Actual output: \n" << out.str() << std::endl;
-			if (test.has_output) {
-				bool result = jhelper::check(test.output, out.str());
-				allOK = allOK && result;
-				std::cout << "Result: " << (result ? "OK" : "Wrong answer") << std::endl;
-			}
-			std::cout << "Time: " << currentTime << std::endl;
-		}
-		else {
-			std::cout << "SKIPPED\n";
-		}
+signed main() {
+    vector<jhelper::Test> tests = {
+            {"2 1 0\n", "Takahashi\n", true, true},{"2 2 0\n", "Aoki\n", true, true},{"2 2 1\n", "Takahashi\n", true, true},
+    };
+    bool allOK = true;
+    int testID = 0;
+    cout << fixed;
+    double maxTime = 0.0;
+    cout << endl;
+    for(const jhelper::Test& test: tests ) {
+        cout << "\033[4m" << "Test #" << ++testID << "\033[m" << endl;
+        cout << "Input: \n" << test.input << endl;
+        if (test.has_output) {
+            cout << "Expected output: \n" << test.output << endl;
+        }
+        else {
+            cout << "Expected output: \n" << "N/A" << endl;
+        }
+        if (test.active) {
+            stringstream in(test.input);
+            ostringstream out;
+            clock_t start = clock();
+            AVeryVeryPrimitiveGame solver;
+            solver.solve(in, out);
+             clock_t finish = clock();
+            double currentTime = double(finish - start) / CLOCKS_PER_SEC;
+            maxTime = max(currentTime, maxTime);
+            cout << "Actual output: \n" << out.str() << endl;
+            if (test.has_output) {
+                bool result = jhelper::check(test.output, out.str());
+                allOK = allOK && result;
 
-		std::cout << std::endl;
+                if (result) {
+                    cout << "Result: " << "\033[32m OK \033[m" << endl;
+                }
+                else {
+                    cout << "Result: " << "\033[31m WA \033[m" << endl;
+                }
+            }
+            cout << "Time: " << currentTime << endl;
+        }
+        else {
+            cout << "SKIPPED\n";
+        }
 
-	}
-	if(allOK) {
-		std::cout << "All OK" << std::endl;
-	}
-	else {
-		std::cout << "Some cases failed" << std::endl;
-	}
-	std::cout << "Maximal time: " << maxTime << "s." << std::endl;
-	return 0;
+
+        cout << endl;
+
+    }
+    if(allOK) {
+        cout << "\033[32m" << "All OK" << "\033[m"<< endl;
+    }
+    else {
+        cout << "\033[31m" << "Some cases failed" << "\033[m"<< endl;
+    }
+    cout << "Maximal time: " << maxTime << "s." << endl;
+    return 0;
 }
