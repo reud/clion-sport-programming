@@ -21,6 +21,7 @@ using vpii = vector<pair<int,int>>;
 class FShiftAndInversions {
 public:
 	void solve(std::istream& in, std::ostream& out) {
-
+	    int N; cin >> N;
+	    vector<int> a(N); REP(i,N) cin >> a[i];
 	}
 };

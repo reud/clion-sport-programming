@@ -14,52 +14,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/A___Very_Very_Primitive_Game.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/F___Shift_and_Inversions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/all" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/convolution" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/convolution.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/dsu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/dsu.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/fenwicktree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/fenwicktree.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_bit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_bit.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_math" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_math.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_queue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_queue.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_scc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_scc.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_type_traits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/internal_type_traits.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/lazysegtree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/lazysegtree.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/math" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/math.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/maxflow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/maxflow.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/mincostflow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/mincostflow.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/modint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/modint.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/scc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/scc.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/segtree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/segtree.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/string" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/string.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/twosat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/twosat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/FShiftAndInversions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="ACL+JHelper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/output/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task.template" beforeDir="false" afterPath="$PROJECT_DIR$/task.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/AVeryVeryPrimitiveGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/AVeryVeryPrimitiveGame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/lib.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/FShiftAndInversions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/FShiftAndInversions.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +137,7 @@
       <recent name="$PROJECT_DIR$/library" />
     </key>
   </component>
-  <component name="RunManager" selected="Task.A - Very Very Primitive Game">
+  <component name="RunManager" selected="Task.F - Shift and Inversions">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -274,7 +232,7 @@
       <option name="presentableId" value="Default" />
       <updated>1497465170172</updated>
       <workItem from="1612500061029" duration="91000" />
-      <workItem from="1612500179137" duration="5211000" />
+      <workItem from="1612500179137" duration="5728000" />
     </task>
     <task id="LOCAL-00001" summary="add JHelper">
       <created>1612501737599</created>
@@ -283,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612501737599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ACL+JHelper">
+      <created>1612666478958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612666478958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -325,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add JHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="add JHelper" />
+    <MESSAGE value="ACL+JHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="ACL+JHelper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
