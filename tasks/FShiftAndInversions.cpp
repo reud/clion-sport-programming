@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #include "../library/all"
-
 #define INF 1e9
 #define INFLL 1ull<<60u
 using namespace std;
@@ -19,22 +18,9 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vpii = vector<pair<int,int>>;
 
-class AVeryVeryPrimitiveGame {
+class FShiftAndInversions {
 public:
 	void solve(std::istream& in, std::ostream& out) {
-        int A,B,C; in >> A >> B >> C;
-        bool is_aoki_turn = C;
-        while (true) {
-            if (is_aoki_turn && B == 0) {
-                out << "Takahashi" << endl;
-                return;
-            } else if (!is_aoki_turn && A == 0) {
-                out << "Aoki" << endl;
-                return;
-            }
-            if (is_aoki_turn) B--;
-            if (!is_aoki_turn) A--;
-            is_aoki_turn = !is_aoki_turn;
-        }
+
 	}
 };

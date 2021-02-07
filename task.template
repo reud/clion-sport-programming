@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#include <all>
+
 #define INF 1e9
 #define INFLL 1ull<<60u
 using namespace std;
