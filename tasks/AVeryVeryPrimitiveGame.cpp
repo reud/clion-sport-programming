@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../library/all"
+#include "../library/atcoder"
 
 #define INF 1e9
 #define INFLL 1ull<<60u

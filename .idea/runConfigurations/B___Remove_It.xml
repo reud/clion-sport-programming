@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B - Remove It" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BRemoveIt" cppPath="tasks/BRemoveIt.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5 5&#10;3 5 6 5 4&#10;" output="3 6 4&#10;" active="true" />
+      <test input="3 3&#10;3 3 3&#10;" output="&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

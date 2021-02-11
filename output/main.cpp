@@ -2180,6 +2180,26 @@ struct two_sat {
 
 
 
+
+
+// BITを用いて数列vの転倒数を求める。O(NlogN)返り値は(BIT,転倒数) 0~N-1の数列を入力する。
+std::pair<atcoder::fenwick_tree<long long>,long long> calcInversions(const std::vector<int> &v) {
+    atcoder::fenwick_tree<long long> BIT(v.size());
+    long long inversions = 0;
+    for(const auto &it: v) {
+        BIT.add(it,1);
+        inversions += (long long)it - BIT.sum(0,it);
+    }
+    return std::make_pair(BIT,inversions);
+}
+
+int getTheAnswer() {
+    return 42;
+}
+
+
+
+
 #define INF 1e9
 #define INFLL 1ull<<60u
 using namespace std;
@@ -2198,29 +2218,25 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vpii = vector<pair<int,int>>;
 
-class AVeryVeryPrimitiveGame {
+class BRemoveIt {
 public:
-	void solve(std::istream& in, std::ostream& out) {
-        int A,B,C; in >> A >> B >> C;
-        bool is_aoki_turn = C;
-        while (true) {
-            if (is_aoki_turn && B == 0) {
-                out << "Takahashi" << endl;
-                return;
-            } else if (!is_aoki_turn && A == 0) {
-                out << "Aoki" << endl;
-                return;
-            }
-            if (is_aoki_turn) B--;
-            if (!is_aoki_turn) A--;
-            is_aoki_turn = !is_aoki_turn;
+    static void solve(std::istream& in, std::ostream& out) {
+        int N,X; in >> N >> X;
+        bool first = true;
+        REP(i,N) {
+            int A; in >> A;
+            if (X == A) continue;
+            if (!first) out << " ";
+            else first = false;
+            out << A;
         }
+        out << endl;
 	}
 };
 
 
 int main() {
-	AVeryVeryPrimitiveGame solver;
+	BRemoveIt solver;
 	std::istream& in(std::cin);
 	std::ostream& out(std::cout);
 	solver.solve(in, out);

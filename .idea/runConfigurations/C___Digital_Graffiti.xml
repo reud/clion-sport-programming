@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C - Digital Graffiti" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CDigitalGraffiti" cppPath="tasks/CDigitalGraffiti.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5 5&#10;.....&#10;.###.&#10;.###.&#10;.###.&#10;.....&#10;" output="4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

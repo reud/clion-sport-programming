@@ -20,9 +20,11 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vpii = vector<pair<int,int>>;
 
-class %ClassName% {
+class AVanishingPitch {
 public:
     static void solve(std::istream& in, std::ostream& out) {
-
+        int V,T,S,D; in >> V >> T >> S >> D;
+        bool deleted = (V * T <= D) && (D <= V * S);
+        out << (deleted ? "No" : "Yes") << endl;
 	}
 };

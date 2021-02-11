@@ -1,4 +1,4 @@
-#include "../tasks/AVeryVeryPrimitiveGame.cpp"
+#include "../tasks/BRemoveIt.cpp"
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -24,7 +24,7 @@ namespace jhelper {
 
 signed main() {
     vector<jhelper::Test> tests = {
-            {"2 1 0\n", "Takahashi\n", true, true},{"2 2 0\n", "Aoki\n", true, true},{"2 2 1\n", "Takahashi\n", true, true},
+            {"5 5\n3 5 6 5 4\n", "3 6 4\n", true, true},{"3 3\n3 3 3\n", "\n", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -44,7 +44,7 @@ signed main() {
             stringstream in(test.input);
             ostringstream out;
             clock_t start = clock();
-            AVeryVeryPrimitiveGame solver;
+            BRemoveIt solver;
             solver.solve(in, out);
              clock_t finish = clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;

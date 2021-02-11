@@ -20,7 +20,7 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vpii = vector<pair<int,int>>;
 
-class %ClassName% {
+class C {
 public:
     static void solve(std::istream& in, std::ostream& out) {
 

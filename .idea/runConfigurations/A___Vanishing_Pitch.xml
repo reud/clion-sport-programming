@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A - Vanishing Pitch" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AVanishingPitch" cppPath="tasks/AVanishingPitch.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="10 3 5 20&#10;" output="Yes&#10;" active="true" />
+      <test input="10 3 5 30&#10;" output="No&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

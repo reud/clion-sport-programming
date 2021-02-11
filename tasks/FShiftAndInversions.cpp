@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
-#include "../library/all"
+#include "../library/atcoder"
+#include "../library/lib.hpp"
+
 #define INF 1e9
 #define INFLL 1ull<<60u
 using namespace std;
@@ -20,8 +22,18 @@ using vpii = vector<pair<int,int>>;
 
 class FShiftAndInversions {
 public:
-	void solve(std::istream& in, std::ostream& out) {
-	    int N; cin >> N;
-	    vector<int> a(N); REP(i,N) cin >> a[i];
+	static void solve(std::istream& in, std::ostream& out) {
+	    int N; in >> N;
+	    vector<int> a(N); REP(i,N) in >> a[i];
+	    auto [tree,inversions] = calcInversions(a);
+	    out << inversions << endl;
+	    REP(i,N-1) {
+	        // 先頭の要素を削除する事による転倒数の減少
+	        inversions -= a[i];
+	        // 末尾に追加する事による転倒数の増加
+	        inversions += N - 1 - a[i];
+	        out << inversions << endl;
+	    }
+
 	}
 };

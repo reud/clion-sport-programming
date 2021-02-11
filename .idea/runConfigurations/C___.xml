@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C - 飛行機乗り" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="C" cppPath="tasks/C.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 4&#10;2 3&#10;1 5 7&#10;3 8 12 13&#10;" output="2&#10;" active="true" />
+      <test input="1 1&#10;1 1&#10;1&#10;1&#10;" output="0&#10;" active="true" />
+      <test input="6 7&#10;5 3&#10;1 7 12 19 20 26&#10;4 9 15 23 24 31 33&#10;" output="3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

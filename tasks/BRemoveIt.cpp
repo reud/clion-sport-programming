@@ -20,9 +20,18 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vpii = vector<pair<int,int>>;
 
-class %ClassName% {
+class BRemoveIt {
 public:
     static void solve(std::istream& in, std::ostream& out) {
-
+        int N,X; in >> N >> X;
+        bool first = true;
+        REP(i,N) {
+            int A; in >> A;
+            if (X == A) continue;
+            if (!first) out << " ";
+            else first = false;
+            out << A;
+        }
+        out << endl;
 	}
 };
