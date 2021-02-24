@@ -23,6 +23,43 @@ using vpii = vector<pair<int,int>>;
 class C {
 public:
     static void solve(std::istream& in, std::ostream& out) {
+        string S; in >> S;
+        string w1 = "dream";
+        string w2 = "dreamer";
+        string w3 = "erase";
+        string w4 = "eraser";
+        reverse(ALL(w1));
+        reverse(ALL(w2));
+        reverse(ALL(w3));
+        reverse(ALL(w4));
+        reverse(ALL(S));
 
-	}
+        string now;
+        for(const auto &c: S) {
+            now.push_back(c);
+            if (now.size() == 5) {
+                if (now == w1 || now == w3) {
+                    now = string();
+                }
+            } else if (now.size() == 6) {
+                if (now == w4) {
+                    now = string();
+                }
+            } else if (now.size() == 7) {
+                if (now == w2) {
+                    now = string();
+                } else {
+                    out << "NO" << endl;
+                    return;
+                }
+            }
+        }
+        if (now.empty()) {
+            out << "YES" << endl;
+        } else {
+            out << "NO" << endl;
+        }
+
+
+    }
 };

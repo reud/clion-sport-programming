@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C - 白昼夢" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="C" cppPath="tasks/C.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="erasedream&#10;" output="YES&#10;" active="true" />
+      <test input="dreameraser&#10;" output="YES&#10;" active="true" />
+      <test input="dreamerer&#10;" output="NO&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

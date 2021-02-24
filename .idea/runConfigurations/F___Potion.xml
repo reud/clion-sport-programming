@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="F - Potion" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="FPotion" cppPath="tasks/FPotion.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 9999999999&#10;3 6 8&#10;" output="4999999994&#10;" active="true" />
+      <test input="1 1000000000000000000&#10;1&#10;" output="999999999999999999&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

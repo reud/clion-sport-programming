@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D - Binomial Coefficients" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="DBinomialCoefficients" cppPath="tasks/DBinomialCoefficients.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;6 9 4 2 11&#10;" output="11 6&#10;" active="true" />
+      <test input="2&#10;100 0&#10;" output="100 0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

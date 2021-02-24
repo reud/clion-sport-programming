@@ -14,20 +14,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="転倒数を求めるガワだけ出来た">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/A___Vanishing_Pitch.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/B___Remove_It.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/C___Digital_Graffiti.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/AVanishingPitch.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/BRemoveIt.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/CDigitalGraffiti.cpp" afterDir="false" />
+    <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="色々追加">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/C___2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/C___DFS_Game.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/D___Binomial_Coefficients.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/F___Potion.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/CDFSGame.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/DBinomialCoefficients.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/FPotion.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/all" beforeDir="false" afterPath="$PROJECT_DIR$/library/atcoder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/lib.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/output/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task.template" beforeDir="false" afterPath="$PROJECT_DIR$/task.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/AVeryVeryPrimitiveGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/AVeryVeryPrimitiveGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/FShiftAndInversions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/FShiftAndInversions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/C.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/C.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrunner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +159,12 @@
       <recent name="$PROJECT_DIR$/library" />
     </key>
   </component>
-  <component name="RunManager" selected="Task.C - 飛行機乗り">
+  <component name="RunManager" selected="Task.F - Potion">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -250,6 +252,10 @@
       <item itemvalue="Task.A - Vanishing Pitch" />
       <item itemvalue="Task.B - Remove It" />
       <item itemvalue="Task.C - 飛行機乗り" />
+      <item itemvalue="Task.D - Binomial Coefficients" />
+      <item itemvalue="Task.C - DFS Game" />
+      <item itemvalue="Task.C - 白昼夢" />
+      <item itemvalue="Task.F - Potion" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -265,6 +271,11 @@
       <workItem from="1612681947023" duration="74000" />
       <workItem from="1612784858962" duration="2021000" />
       <workItem from="1612866017597" duration="1487000" />
+      <workItem from="1613027097973" duration="1667000" />
+      <workItem from="1613296112891" duration="3316000" />
+      <workItem from="1613387802122" duration="3828000" />
+      <workItem from="1613697013283" duration="3807000" />
+      <workItem from="1613991993412" duration="10272000" />
     </task>
     <task id="LOCAL-00001" summary="add JHelper">
       <created>1612501737599</created>
@@ -287,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612666995602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="色々追加">
+      <created>1613027182676</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613027182676</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -331,7 +349,8 @@
     <MESSAGE value="add JHelper" />
     <MESSAGE value="ACL+JHelper" />
     <MESSAGE value="転倒数を求めるガワだけ出来た" />
-    <option name="LAST_COMMIT_MESSAGE" value="転倒数を求めるガワだけ出来た" />
+    <MESSAGE value="色々追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="色々追加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

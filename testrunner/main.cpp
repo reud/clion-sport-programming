@@ -1,4 +1,4 @@
-#include "../tasks/BRemoveIt.cpp"
+#include "../tasks/FPotion.cpp"
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -24,7 +24,7 @@ namespace jhelper {
 
 signed main() {
     vector<jhelper::Test> tests = {
-            {"5 5\n3 5 6 5 4\n", "3 6 4\n", true, true},{"3 3\n3 3 3\n", "\n", true, true},
+            {"3 9999999999\n3 6 8\n", "4999999994\n", true, true},{"1 1000000000000000000\n1\n", "999999999999999999\n", true, true},
     };
     bool allOK = true;
     int testID = 0;
@@ -44,7 +44,7 @@ signed main() {
             stringstream in(test.input);
             ostringstream out;
             clock_t start = clock();
-            BRemoveIt solver;
+            FPotion solver;
             solver.solve(in, out);
              clock_t finish = clock();
             double currentTime = double(finish - start) / CLOCKS_PER_SEC;
